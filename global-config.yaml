@@ -1,0 +1,7 @@
+homeRegion: us-east-1
+enabledRegions:
+  - us-east-1
+controlTower:
+  enable: true
+  landingZone:
+    version: "3.2"
