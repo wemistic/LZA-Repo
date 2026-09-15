@@ -1,0 +1,17 @@
+mandatoryAccounts:
+  - name: LogArchive
+    description: Centralized logging account for Control Tower and LZA
+    email: logarchive-admin@example.com  # Replace with your real Log Archive email address
+  - name: Audit
+    description: Security and audit account for Control Tower and LZA
+    email: audit-admin@example.com       # Replace with your real Audit email address
+
+workloadAccounts:
+  - name: AggregatorAccount
+    description: Central Logging Aggregator account
+    email: wemistic.1@gmail.com
+    organizationalUnit: Sandbox
+  - name: CloudTrailAdminAccount
+    description: Central CloudTrail Management account
+    email: wemistic.2@gmail.com
+    organizationalUnit: Sandbox
