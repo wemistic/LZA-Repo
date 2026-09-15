@@ -1,1 +1,39 @@
-vpcs: []
+vpcs:
+  - name: VPC-App1
+    account: AggregatorAccount
+    region: us-east-1
+    cidrs:
+      - 10.100.0.0/16
+    subnets:
+      - name: App1-Private-Subnet-A
+        availabilityZone: a
+        ipv4CidrBlock: 10.100.1.0/24
+      - name: App1-Private-Subnet-B
+        availabilityZone: b
+        ipv4CidrBlock: 10.100.2.0/24
+
+  - name: VPC-App2
+    account: CloudTrailAdminAccount
+    region: us-east-1
+    cidrs:
+      - 10.200.0.0/16
+    subnets:
+      - name: App2-Private-Subnet-A
+        availabilityZone: a
+        ipv4CidrBlock: 10.200.1.0/24
+      - name: App2-Private-Subnet-B
+        availabilityZone: b
+        ipv4CidrBlock: 10.200.2.0/24
+
+  - name: VPC-App3
+    account: AggregatorAccount
+    region: us-east-1
+    cidrs:
+      - 10.300.0.0/16
+    subnets:
+      - name: App3-Private-Subnet-A
+        availabilityZone: a
+        ipv4CidrBlock: 10.300.1.0/24
+      - name: App3-Private-Subnet-B
+        availabilityZone: b
+        ipv4CidrBlock: 10.300.2.0/24
