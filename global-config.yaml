@@ -1,4 +1,11 @@
+homeRegion: us-east-1
+enabledRegions:
+  - us-east-1
+managementAccountAccessRole: AWSControlTowerExecution
+cloudwatchLogRetentionInDays: 365
+
 logging:
+  account: LogArchive
   s3:
     retentionInDays: 365
 
