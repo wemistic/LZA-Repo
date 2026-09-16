@@ -39,7 +39,7 @@ centralSecurityServices:
     exportConfiguration:
       enable: false
       destinationType: S3
-      exportFrequency: MONTHLY
+      exportFrequency: FIFTEEN_MINUTES
       kmsKeyArn: ""
 
   securityHub:
