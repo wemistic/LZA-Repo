@@ -1,2 +1,6 @@
-organizationalUnits:
-  - name: Sandbox
+enable: true
+organizationalUnits: []
+serviceControlPolicies: []
+taggingPolicies: []
+backupPolicies:
+  enable: false
