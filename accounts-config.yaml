@@ -1,44 +1,12 @@
-vpcs:
-  - name: VPC-App1
-    account: Management
-    region: us-east-1
-    cidrs:
-      - 10.100.0.0/16
-    subnets:
-      - name: App1-Private-Subnet-A
-        availabilityZone: us-east-1a
-        ipv4CidrBlock: 10.100.1.0/24
-      - name: App1-Private-Subnet-B
-        availabilityZone: us-east-1b
-        ipv4CidrBlock: 10.100.2.0/24
+mandatoryAccounts:
+  - name: Management
+    description: Management Account
+    email: management@example.com
+  - name: LogArchive
+    description: Log Archive Account
+    email: logarchive@example.com
+  - name: Audit
+    description: Audit Account
+    email: audit@example.com
 
-  - name: VPC-App2
-    account: Audit
-    region: us-east-1
-    cidrs:
-      - 10.200.0.0/16
-    subnets:
-      - name: App2-Private-Subnet-A
-        availabilityZone: us-east-1a
-        ipv4CidrBlock: 10.200.1.0/24
-      - name: App2-Private-Subnet-B
-        availabilityZone: us-east-1b
-        ipv4CidrBlock: 10.200.2.0/24
-
-  - name: VPC-App3
-    account: Management
-    region: us-east-1
-    cidrs:
-      - 10.30.0.0/16
-    subnets:
-      - name: App3-Private-Subnet-A
-        availabilityZone: us-east-1a
-        ipv4CidrBlock: 10.30.1.0/24
-      - name: App3-Private-Subnet-B
-        availabilityZone: us-east-1b
-        ipv4CidrBlock: 10.30.2.0/24
-
-transitGateways: []
-defaultVpc:
-  delete: true
-endpointPolicies: []
+workloadAccounts: []
