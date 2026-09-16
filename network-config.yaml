@@ -29,11 +29,16 @@ vpcs:
     account: Management
     region: us-east-1
     cidrs:
-      - 10.300.0.0/16
+      - 10.30.0.0/16
     subnets:
       - name: App3-Private-Subnet-A
         availabilityZone: us-east-1a
-        ipv4CidrBlock: 10.100.1.0/24
+        ipv4CidrBlock: 10.30.1.0/24
       - name: App3-Private-Subnet-B
         availabilityZone: us-east-1b
-        ipv4CidrBlock: 10.100.2.0/24
+        ipv4CidrBlock: 10.30.2.0/24
+
+transitGateways: []
+defaultVpc:
+  delete: true
+endpointPolicies: []
