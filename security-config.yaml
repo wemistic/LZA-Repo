@@ -23,21 +23,30 @@ awsConfig:
 
 centralSecurityServices:
   delegatedAdminAccount: Audit
+
   ebsDefaultVolumeEncryption:
     enable: false
+
   s3PublicAccessBlock:
     enable: true
+
   guardduty:
     enable: false
-    s3Protection: false
+
+    s3Protection:
+      enable: false
+
     exportConfiguration:
       enable: false
       destinationType: S3
+      exportFrequency: MONTHLY
       kmsKeyArn: ""
+
   securityHub:
     enable: false
     regionAggregation: false
     standards: []
+
   ssmAutomation:
     enable: false
     documentSets: []
