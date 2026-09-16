@@ -1,31 +1,56 @@
 homeRegion: us-east-1
+
 enabledRegions:
   - us-east-1
+
 managementAccountAccessRole: AWSControlTowerExecution
+
 cloudwatchLogRetentionInDays: 365
 
 logging:
   account: LogArchive
+
+  cloudtrail:
+    enable: false
+    organizationTrail: false
+    organizationTrailSettings:
+      multiRegionTrail: true
+      globalServiceEvents: true
+      managementEvents: true
+      s3DataEvents: true
+      lambdaDataEvents: true
+      sendToCloudWatchLogs: true
+      apiErrorRateInsight: false
+      apiCallRateInsight: false
+    accountTrails: []
+    lifecycleRules: []
+
   s3:
     retentionInDays: 365
+
   sessionManager:
     sendToCloudWatchLogs: true
     sendToS3: true
+
   reports:
     costAndUsageReport:
       enable: false
+
   centralize:
     s3:
       enable: true
 
 controlTower:
   enable: false
+
   landingZone:
     version: "3.0"
+
     logging:
       loggingBucketRetentionDays: 365
       accessLoggingBucketRetentionDays: 365
       organizationTrail: false
+
     security:
       kmsKeyArn: ""
       enableIdentityCenterAccess: false
