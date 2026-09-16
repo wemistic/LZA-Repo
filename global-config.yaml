@@ -11,6 +11,12 @@ logging:
   sessionManager:
     sendToCloudWatchLogs: true
     sendToS3: true
+  reports:
+    costAndUsageReport:
+      enable: false
+  centralize:
+    s3:
+      enable: true
 
 controlTower:
   enable: false
@@ -23,3 +29,4 @@ controlTower:
     security:
       kmsKeyArn: ""
       enableIdentityCenterAccess: false
+      controls: []
