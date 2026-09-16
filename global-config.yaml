@@ -1,7 +1,12 @@
-homeRegion: us-east-1
-enabledRegions:
-  - us-east-1
+logging:
+  s3:
+    retentionInDays: 365
+
 controlTower:
-  enable: true
+  enable: false
   landingZone:
-    version: "3.2"
+    version: "3.0"
+    logging:
+      loggingBucketRetentionDays: 365
+    security:
+      kmsKeyArn: ""
