@@ -8,6 +8,9 @@ logging:
   account: LogArchive
   s3:
     retentionInDays: 365
+  sessionManager:
+    sendToCloudWatchLogs: true
+    sendToS3: true
 
 controlTower:
   enable: false
@@ -15,5 +18,8 @@ controlTower:
     version: "3.0"
     logging:
       loggingBucketRetentionDays: 365
+      accessLoggingBucketRetentionDays: 365
+      organizationTrail: false
     security:
       kmsKeyArn: ""
+      enableIdentityCenterAccess: false
