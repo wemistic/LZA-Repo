@@ -1,2 +1,24 @@
+cloudWatch:
+  enable: true
+
+accessAnalyzer:
+  enable: false
+
+iamPasswordPolicy:
+  allowUsersToChangePassword: true
+
+awsConfig:
+  enable: false
+
 centralSecurityServices:
   delegatedAdminAccount: Audit
+  ebsDefaultVolumeEncryption:
+    enable: false
+  s3PublicAccessBlock:
+    enable: true
+  guardduty:
+    enable: false
+  securityHub:
+    enable: false
+  ssmAutomation:
+    enable: false
