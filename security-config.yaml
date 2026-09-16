@@ -1,14 +1,25 @@
 cloudWatch:
   enable: true
+  alarmSets: []
+  metricSets: []
 
 accessAnalyzer:
   enable: false
 
 iamPasswordPolicy:
   allowUsersToChangePassword: true
+  hardExpiry: false
+  requireUppercaseCharacters: true
+  requireLowercaseCharacters: true
+  requireSymbols: true
+  requireNumbers: true
+  minimumPasswordLength: 14
+  passwordReusePrevention: 24
+  maxPasswordAge: 90
 
 awsConfig:
   enable: false
+  enableConfigurationRecorder: false
 
 centralSecurityServices:
   delegatedAdminAccount: Audit
@@ -18,7 +29,12 @@ centralSecurityServices:
     enable: true
   guardduty:
     enable: false
+    s3Protection: false
+    exportConfiguration:
+      enable: false
   securityHub:
     enable: false
+    standards: []
   ssmAutomation:
     enable: false
+    documentSets: []
