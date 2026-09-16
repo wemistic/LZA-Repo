@@ -42,16 +42,3 @@ logging:
 
 controlTower:
   enable: false
-
-  landingZone:
-    version: "3.0"
-
-    logging:
-      loggingBucketRetentionDays: 365
-      accessLoggingBucketRetentionDays: 365
-      organizationTrail: false
-
-    security:
-      kmsKeyArn: ""
-      enableIdentityCenterAccess: false
-      controls: []
