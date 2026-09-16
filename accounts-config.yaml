@@ -1,12 +1,15 @@
 mandatoryAccounts:
   - name: Management
     description: Management Account
-    email: management@example.com
+    email: wemistic@gmail.com
+    organizationalUnit: Root
   - name: LogArchive
     description: Log Archive Account
-    email: logarchive@example.com
+    email: wemistic.1@gmail.com
+    organizationalUnit: Security
   - name: Audit
     description: Audit Account
-    email: audit@example.com
+    email: wemistic.2@gmail.com
+    organizationalUnit: Security
 
 workloadAccounts: []
