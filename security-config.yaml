@@ -32,8 +32,11 @@ centralSecurityServices:
     s3Protection: false
     exportConfiguration:
       enable: false
+      destinationType: S3
+      kmsKeyArn: ""
   securityHub:
     enable: false
+    regionAggregation: false
     standards: []
   ssmAutomation:
     enable: false
